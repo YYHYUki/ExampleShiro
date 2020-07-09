@@ -131,7 +131,7 @@ public class SceneControl : MonoBehaviour {
 				int ignit = this.score_counter.bestIgnit();
 				Debug.Log("CLEAR TIME= "+ this.clear_time);
 	//			GlobalParam.getInstance().setLastScore( this.clear_time, ignit);
-				Application.LoadLevel("resultScene");
+				//Application.LoadLevel("resultScene");
 				break;
 			}
 

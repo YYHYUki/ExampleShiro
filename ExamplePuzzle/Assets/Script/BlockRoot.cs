@@ -67,10 +67,10 @@ public class BlockRoot : MonoBehaviour {
 			do {
 
 				// 화면 어딘가에 낙하 중인 블록이 있을 때는 잡을 수 없다.
-				if(this.is_has_falling_block()) {
+				/*if(this.is_has_falling_block()) {
 
 					//break;
-				}
+				}*/
 
 				// 마우스를 클릭한 순간이 아니다.
 				if(!Input.GetMouseButtonDown(0)) {
@@ -162,12 +162,13 @@ public class BlockRoot : MonoBehaviour {
 			this.score_counter.clearIgniteCount();
 		}
 
-		if(this.is_has_falling_block() || this.is_has_sliding_block()) {
+		//if(this.is_has_falling_block() || this.is_has_sliding_block()) {
 
 			// 화면 안 어딘가에서 낙하 중이나 슬라이드 중인 블록이 있을.
 			// 때는 발화 검사를 하지 않는다.
 
-		} else {
+	//	} 
+    else if{
 
 			// 발화한 블록의 수를 센다.
 			int		ignite_count = 0;
@@ -432,21 +433,21 @@ public class BlockRoot : MonoBehaviour {
 		return(ret);
 	}
 	// 화면 어딘가에 낙하 중인 블록이 있는가?.
-	private bool	is_has_falling_block()
-	{
-		bool	ret = false;
+	//private bool	is_has_falling_block()
+	//{
+		//bool	ret = false;
 
-		foreach(BlockControl block in this.blocks) {
+		//foreach(BlockControl block in this.blocks) {
 
-			if(block.step == Block.STEP.FALL) {
+			//if(block.step == Block.STEP.FALL) {
 
-				ret = true;
-				break;
-			}
-		}
+				//ret = true;
+				//break;
+			//}
+		//}
 
-		return(ret);
-	}
+		//return(ret);
+	//}
 
 
 	// 세로 한 줄 어딘가에 슬라이드 중인 블록이 있는가?.

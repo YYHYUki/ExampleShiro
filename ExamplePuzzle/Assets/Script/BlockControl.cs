@@ -156,7 +156,7 @@ public class BlockControl : MonoBehaviour {
 
 		this.models = new GameObject[(int)Block.COLOR.NORMAL_COLOR_NUM];
 
-		this.models_root = this.transform.Find("models").gameObject;
+		//this.models_root = this.transform.Find("models").gameObject;
 
 		this.models[(int)Block.COLOR.PINK]    = this.models_root.transform.Find("block_pink").gameObject;
 		this.models[(int)Block.COLOR.BLUE]    = this.models_root.transform.Find("block_blue").gameObject;
