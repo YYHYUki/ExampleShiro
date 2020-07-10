@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+// new one for
 
 // 레벨 데이터.
 public class LevelData {
@@ -27,7 +28,7 @@ public class LevelData {
 	}
 
 	// 블록의 확률 합계를 1.0으로 한다.
-	public void		normalize()
+	/*public void		normalize()
 	{
 		float	sum = 0.0f;
 
@@ -47,7 +48,7 @@ public class LevelData {
 				break;
 			}
 		}
-	}
+	}*/
 
 	public float[]	probability;			// 블록의 출현 확률.
 	public float	heat_time;				// 재발화 접수 시간.
@@ -118,7 +119,7 @@ public class LevelControl {
 
 			if(n >= 7) {
 
-				level_data.normalize();
+				//level_data.normalize();
 				this.level_datas.Add(level_data);
 
 			} else {
