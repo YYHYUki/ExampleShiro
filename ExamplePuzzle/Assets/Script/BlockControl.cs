@@ -797,7 +797,7 @@ public class BlockControl : MonoBehaviour {
 
 		if(this.step == Block.STEP.IDLE && this.next_step == Block.STEP.NONE) {
 
-			is_idle = true;
+			//is_idle = true;
 		}
 
 		return(is_idle);
@@ -810,7 +810,7 @@ public class BlockControl : MonoBehaviour {
 
 		if(this.step == Block.STEP.VACANT && this.next_step == Block.STEP.NONE) {
 
-			is_vacant = true;
+			//is_vacant = true;
 		}
 
 		return(is_vacant);
@@ -826,7 +826,7 @@ public class BlockControl : MonoBehaviour {
 	{
 		if(this.is_visible != is_visible) {
 
-			this.is_visible = is_visible;
+			//this.is_visible = is_visible;
 
 			this.models_root.SetActive(this.is_visible);
 		}
@@ -887,9 +887,5 @@ public class BlockControl : MonoBehaviour {
 		}
 	}
 
-	// ModelRoot(각 색 블록 모델의 부모)를 얻는다.
-	public GameObject	getModelsRoot()
-	{
-		return(this.models_root);
-	}
+	
 }
